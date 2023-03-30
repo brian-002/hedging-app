@@ -1,0 +1,25 @@
+.container{
+    background-color: #ffffff;
+    position: relative;
+}
+.signin-form{
+    background-color: rgba(0, 128, 128, 0.63);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 40%;
+    border-radius: .5em;
+}
+.details-login{
+    padding-left: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.wrapper{
+    display: flex;
+}
+.message-to-user{
+    margin: auto;
+}

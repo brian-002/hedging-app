@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>hedger|signin</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%load static%}
+        {%load bootstrap5%}
+        {%bootstrap_css%}
+        {%bootstrap_javascript%}
+        {%bootstrap_messages%}
+        <link rel="stylesheet" href="{%static 'app/signin.css'%}">
+    </head>
+    <body>
+        
+        <div class="wrapper">
+            <div class="message-to-user">
+                <h4>signin</h4>
+                <h5>please provide your details to continue the hedger</h5>
+            </div>
+        </div>
+        <div class="container">
+            <div class="signin-form">
+                <form action="/signin" method="post" class="details-login">
+                    {% csrf_token%}
+                    <label for=""><b>username</b></label><br>
+                    <input type="text" name="username" id="username" placeholder="enter username" required>
+                    <br>
+                    <br>
+        
+                    <label for=""><b>password</b></label><br>
+                    <input type="password" name="pass1" id="pass1" placeholder="enter your password" required>
+                    <br>
+                    <br>
+
+                    {%buttons%}
+                    <button type="submit" class="btn btn-success">sign in</button>
+                    {%endbuttons%}
+                </form>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

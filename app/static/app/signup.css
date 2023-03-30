@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-color: #ffffff;
+    position: relative;
+}
+.signup-form{
+    display: grid;
+    background-color: rgba(24, 117, 117, 0.671);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 40%;
+    border-radius: 2%;
+}
+
+.details{
+    padding-left: 20%;
+}
+
+.userinput{
+    margin-right: 5em;
+    width: 20em;
+}
+
+.aware{
+    display: flex;
+}
+.mess{
+    margin: auto;
+}

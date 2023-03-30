@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>hedger|signup</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%load static%}
+        {%load bootstrap5%}
+        {%bootstrap_css%}
+        {%bootstrap_javascript%}
+        {%bootstrap_messages%}
+        <link rel="stylesheet" href="{% static 'app/signup.css'%}">
+    </head>
+    <body>
+        <div class="aware">
+            <div class="mess">
+                <h5>sign up to the hedger and get garanteed not to loss your money due to price flucruation</h5>
+                <h4>Thank you for taking intrest in us!</h4>
+            </div>
+        </div>
+        <div class="container">
+            <div class="signup-form">
+                    <form action="/signup" method="post" class="details">
+                        {% csrf_token%}
+                        <label for=""><b>username</b></label><br>
+                        <input type="text" name="username" class="userinput" id="username" placeholder="create username,(should alphanumeric)" required>
+                        <br>
+                        <br>
+    
+                        <label for=""><b>first name</b></label><br>
+                        <input type="text" name="fname" class="userinput" id="fname" placeholder="enter first name" required>
+                        <br>
+                        <br>
+    
+                        <label for=""><b>last name</b></label><br>
+                        <input type="text" name="lname" class="userinput" id="lname" placeholder="enter last name" required>
+                        <br>
+                        <br>
+    
+                        <label for=""><b>email</b></label><br>
+                        <input type="email" name="email" class="userinput" id="email" placeholder="enter email" required>
+                        <br>
+                        <br>
+    
+                        <label for=""><b>password</b></label><br>
+                        <input type="password" name="pass1" class="userinput" id="pass1" placeholder="create password" required>
+                        <br>
+                        <br>
+    
+                        <label for=""><b>confirm password</b></label><br>
+                        <input type="password" name="pass2" class="userinput" id="pass2" placeholder="confirm password" required>
+                        <br>
+                        <br>
+    
+                        <label for=""><b>company name</b></label><br>
+                        <input type="text" name="cname" class="userinput" id="cname" placeholder="enter company name" required>
+                        <br>
+                        <br>
+                        
+                        {%buttons%}
+                        <button type="submit" class="btn btn-primary">sign up</button>
+                        {%endbuttons%}
+                    </form>
+            </div>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -7,28 +7,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>hedger|signin</title>
+        <title>forecast-hedger</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        {%load static%}
+        {%load bootstrap5%}
         <link rel="stylesheet" href="">
     </head>
     <body>
-        <h4>signin page</h4>
-
-        <form action="/signin" method="post">
-            {% csrf_token%}
-            <label for="">username</label><br>
-            <input type="text" name="username" id="username" placeholder="enter username" required>
-            <br>
-            <br>
-
-            <label for="">password</label><br>
-            <input type="password" name="pass1" id="pass1" placeholder="enter your password" required>
-            <br>
-            <br>
-
-            <button type="submit">sign in</button>
-        </form>
+        <h1>forecast</h1>
+        <hr>
         
         <script src="" async defer></script>
     </body>
