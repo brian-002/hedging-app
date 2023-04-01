@@ -1,9 +1,9 @@
 .container{
-    background-color: #ffffff;
+    background-color: black;
     position: relative;
 }
 .signin-form{
-    background-color: rgba(0, 128, 128, 0.63);
+    background-color: rgba(0, 47, 47, 1);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,6 +12,7 @@
     border-radius: .5em;
 }
 .details-login{
+    color: #ffffff;
     padding-left: 30%;
     padding-top: 10%;
     padding-bottom: 10%;

@@ -19,37 +19,16 @@
     </head>
     <body>
         {% if user.is_authenticated%}
-        <h4>wecome to the hedger</h4>
-
         <div id="wrapper">
             <div id="sidepanel">
               <div class="user-details">
-                <img src="#" alt="profile">
+                <img src="{%static 'app/IMG_20221008_133709.jpg'%}" alt="profile">
                 
                 <a href="#"><h4>@{{username}}</h4></a>
                 
               </div>
               <div id="flexbox">
-                <form class="c018 c0111 c012">
-                  {%csrf_token%}
-                  <div class="c0112 c0124 c012">
-                    <div class="c0118 c0119">
-                      <div>
-                        <div class="c014"></div>
-                        <div class="c016">Search</div>
-                      </div>
-                    </div>
-                    <input placeholder = "search" class = "c0126 c0128" type="text">
-                    <button type="button"   class = "c0129 c0143 c0132 c0144 c0110" aria-hidden="true" aria-disabled="true"aria-label = "search" tabindex="-1">
-                      <span class="c0135 c0145">
-                        <svg viewBox="0 0 16 16" width="5px" height="5px" xmlns="http://www.w3.org/2000/svg" style="width: 15px; height: 10px;">
-                          <path d="M10.5 0C11.0052 0 11.4922 0.0651042 11.9609 0.195312C12.4297 0.325521 12.8672 0.510417 13.2734 0.75C13.6797 0.989583 14.0495 1.27865 14.3828 1.61719C14.7214 1.95052 15.0104 2.32031 15.25 2.72656C15.4896 3.13281 15.6745 3.57031 15.8047 4.03906C15.9349 4.50781 16 4.99479 16 5.5C16 6.00521 15.9349 6.49219 15.8047 6.96094C15.6745 7.42969 15.4896 7.86719 15.25 8.27344C15.0104 8.67969 14.7214 9.05208 14.3828 9.39062C14.0495 9.72396 13.6797 10.0104 13.2734 10.25C12.8672 10.4896 12.4297 10.6745 11.9609 10.8047C11.4922 10.9349 11.0052 11 10.5 11C9.84896 11 9.22396 10.8906 8.625 10.6719C8.03125 10.4531 7.48438 10.138 6.98438 9.72656L0.851562 15.8516C0.752604 15.9505 0.635417 16 0.5 16C0.364583 16 0.247396 15.9505 0.148438 15.8516C0.0494792 15.7526 0 15.6354 0 15.5C0 15.3646 0.0494792 15.2474 0.148438 15.1484L6.27344 9.01562C5.86198 8.51562 5.54688 7.96875 5.32812 7.375C5.10938 6.77604 5 6.15104 5 5.5C5 4.99479 5.0651 4.50781 5.19531 4.03906C5.32552 3.57031 5.51042 3.13281 5.75 2.72656C5.98958 2.32031 6.27604 1.95052 6.60938 1.61719C6.94792 1.27865 7.32031 0.989583 7.72656 0.75C8.13281 0.510417 8.57031 0.325521 9.03906 0.195312C9.50781 0.0651042 9.99479 0 10.5 0ZM10.5 10C11.1198 10 11.7031 9.88281 12.25 9.64844C12.7969 9.40885 13.2734 9.08594 13.6797 8.67969C14.0859 8.27344 14.4062 7.79688 14.6406 7.25C14.8802 6.70312 15 6.11979 15 5.5C15 4.88021 14.8802 4.29688 14.6406 3.75C14.4062 3.20312 14.0859 2.72656 13.6797 2.32031C13.2734 1.91406 12.7969 1.59375 12.25 1.35938C11.7031 1.11979 11.1198 1 10.5 1C9.88021 1 9.29688 1.11979 8.75 1.35938C8.20312 1.59375 7.72656 1.91406 7.32031 2.32031C6.91406 2.72656 6.59115 3.20312 6.35156 3.75C6.11719 4.29688 6 4.88021 6 5.5C6 6.11979 6.11719 6.70312 6.35156 7.25C6.59115 7.79688 6.91406 8.27344 7.32031 8.67969C7.72656 9.08594 8.20312 9.40885 8.75 9.64844C9.29688 9.88281 9.88021 10 10.5 10Z"></path>
-                        </svg>
-                      </span>
-                    </button>
-                    
-                  </div>
-                </form>
+              <button type="submit" class="btnsignout"> <a href="/signout"> signout </a> </button>
               </div>
               <hr>
               <ul>
@@ -57,57 +36,141 @@
                 <li><button type="submit"><a href="/hedge">hedge</a></button></li>
                 <li><button type="submit"><a href="/commodityinfo">commodity information</a></button></li>
               </ul>
+              
               <section class="userpanel">
-                <h3><u>more options</u></h3>
+                <h3><u>other options</u></h3>
                 <ul>
-                    <li>settings</li>
                     <li>inquiry</li>
                     <li>about us</li>
-                    <li>customize</li>
-                    <li>dark mode</li>
                     <li>book marks</li>
     
                 </ul>
               </section>
             </div>
 
+            <div class="main-part">
+              <div class="contain">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Hedger</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More-options
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">settings</a></li>
+                            <li><a class="dropdown-item" href="#">Dark mode</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Customize</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </nav>
+
+                <button class="btn btn-warning" type="button">go to reports</button>
+
+                <p></p>
+
+                <div class="card">
+                  <img src="..." class="card-img-top" alt="...">
+                
+                  <div class="card-body">
+                    <h5 class="card-title">Hedging</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Hedge</a>
+                  </div>
+                </div>
+                
+                <div class="card" aria-hidden="true">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                      <span class="placeholder col-6"></span>
+                      <p>can be used to enhance the experience of your</p> 
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                      <p>can be used to enhance the experience of your application.</p> </span>
+                      <p>can be used to enhance the experience of your application.</p> 
+                      <p>can be used to enhance the experience of your application.</p> 
+                      <span class="placeholder col-6"></span>
+                      <span class="placeholder col-8"></span>
+                    </p>
+                    <a class="btn btn-primary disabled placeholder col-6">more info</a>
+                  </div>
+
+                </div>
+
+                <p aria-hidden="true">
+                  <span class="placeholder col-6"></span>
+                </p>
+                
+                <a class="btn btn-primary disabled placeholder col-4">explore</a>
+
+
+                
+              </div>
+            </div>
+
         </div>
 
-        <button type="submit"> <a href="/signout"> signout </a> </button>
+        
 
         {%else%}
 
         <div class="welcome-container">
             <div class="welcome">
-                <section class="welcome-message">
-                    <p>this is a message to welcome you to our page hope you enjoy your visit</p>
-                </section>
 
                 <section class="page-description">
                     <p>this is a section that describes the function of the page the functionalties and every other 
-                       thing involving the page to  convince other users who are not yet on the plartform to enter the plartform</p>
+                       thing involving the page to  convince other users who are not yet on the plartform to enter the plartform
+                       The .btn classes are designed to be used with the button element. However, you can also use these classes on a or
+                         input elements (though some browsers may apply a slightly different rendering).
+
+                        When using button classes on a elements that are used to trigger in-page functionality (like collapsing content),
+                           rather than linking to new pages or sections within the current page, these links should be given a role="button" 
+                          to appropriately convey their purpose to assistive technologies such as screen readers.</p>
                 </section>
 
                 <section class="image-section">
-                    <img src="#" alt="photo">
+                    <img src="{%static 'app/welcome img.webp'%}" alt="photo">
                 </section>
 
                 <section class="external-links-section">
                     <ul>
-                        <li>external links</li>
-                        <li>external links</li>
-                        <li>external links</li>
-                        <li>external links</li>
-                        <li>external links</li>
-                        <li>external links</li>
+                        <li><a href="#">subsidiaries</a></li>
+                        <li><a href="#">management</a></li>
+                        <li><a href="#">contuct us</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">about us</a></li>
                     </ul>
                 </section>
 
             </div>
         </div>
 
-        <button type="submit"> <a href="/signin"> signin </a> </button>
-        <button type="submit"> <a href="/signup"> signup </a> </button>
+        <button type="submit" class="btn btn-success"> <a href="/signin"> signin </a> </button>
+        <button type="submit" class="btn btn-success"> <a href="/signup"> signup </a> </button>
         {%endif%}
         
         <script src="" async defer></script>

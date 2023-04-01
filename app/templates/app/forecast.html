@@ -12,11 +12,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         {%load static%}
         {%load bootstrap5%}
-        <link rel="stylesheet" href="">
+        {%bootstrap_css%}
+        {%bootstrap_javascript%}
+        {%bootstrap_messages%}
+        <link rel="stylesheet" href="{%static 'app/hedge.css'%}">
     </head>
     <body>
-        <h1>forecast</h1>
+        <div class="topper">
+            <div class="topper-nav">
+                <h1>forecast</h1>
+            </div>
+        </div>
+        
         <hr>
+        <div class="graph-details">
+            <div class="hedge-details">
+                <div class="interactions">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Choose Scale
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">1:200</a></li>
+                          <li><a class="dropdown-item" href="#">1:500</a></li>
+                          <li><a class="dropdown-item" href="#">1:1000</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Choose Duration
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">six months</a></li>
+                          <li><a class="dropdown-item" href="#">One year</a></li>
+                          <li><a class="dropdown-item" href="#">Two years</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+                        <button type="button" class="btn btn-danger">clear</button>
+                        <button type="button" class="btn btn-success">submit</button>
+                        <button type="button" class="btn btn-success">go to reports</button>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div class="graph">
+                <h3>This part will display the graph</h3>
+            </div>
+        </div>
+        
         
         <script src="" async defer></script>
     </body>

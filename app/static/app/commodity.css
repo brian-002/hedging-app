@@ -1,0 +1,23 @@
+body{
+   background-color:  rgba(0, 47, 47, 1);
+   color: #ffffff;
+}
+
+.details-table{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+.description{
+    width: 50%;
+}
+
+.biological-table{
+    display: flex;
+    justify-content: space-around;
+}
+
+.photo{
+    width: 50%;
+}

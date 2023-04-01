@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: black;
+    padding: 0;
+    
+}
+.primary-navbar{
+    background-color: rgba(0, 128, 128, 0.63);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container-fluid{
+    margin: .5em;
+}
+
+.container-fluid a{
+    color: #ffffff;
+    font-weight: bolder;
+}
+.graph-details{
+    display: flex;
+}
+
+.graph{
+    width: 80%;
+    background-color: #ffffff;
+}
+
+.hedge-details{
+    display: grid;
+    place-items: center;
+    width: 20%;
+    height: 45.5em;
+    background-color: rgba(0, 47, 47, 1);
+}
+.interactions{
+    display: grid;
+    place-items: center;
+}
+
+.dropdown{
+    margin-bottom: 2em;
+}
+
+.hedge-form{
+    margin-bottom: 1em;
+}
+
+.btn-group-vertical button{
+    margin-bottom: 2em;
+}
+.topper{
+    background-color: #ffffff;
+}
+.topper-nav{
+    background-color: rgba(0, 47, 47, 1);
+    color: #ffffff;
+    padding: 1em;
+    display: flex;
+}

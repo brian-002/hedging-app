@@ -1,3 +1,130 @@
 body{
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-container{
+    position: relative;
+}
+.welcome{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(-5%, 10%);
+}
+
+.welcome-message{
+    background-color: #ffffff;
+}
+
+.page-description{
+    background-color: rgba(0, 47, 47, 1);
+    color: #ffffff;
+    border-radius: .5em;
+    padding-right: .5em;
+    padding-left: 1em;
+}
+.image-section{
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+}
+.image-section img{
+    width: 40%;
+
+}
+.external-links-section{
+    background-color: #111111de;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    bottom: 0;
+}
+
+.external-links-section li{
+    list-style: none;
+}
+
+.external-links-section a{
+    text-decoration: none;
+    color: aqua;
+}
+
+button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255);
+
+  }
+  
+  #sidepanel {
+    flex-basis: 20%;
+    background-color: rgba(0, 47, 47, 1);
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  #sidepanel h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #sidepanel ul {
+    list-style: none;
+    margin-top: 2em;
+  }
+  
+  #sidepanel li {
+    margin-bottom: 10px;
+    width: 10em;
+  }
+
+  #sidepanel li button{
+    margin-bottom: 10px;
+    width: 15em;
+    height: 3em;
+
+  }
+  
+  #sidepanel a {
+    display: block;
+    padding: 5px;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .userpanel{
+    margin-top:12em;
+    background-color: rgba(0, 47, 47, 0.699);
+    color: #ffffff;
+    padding: 1em;
+  }
+  .user-details{
+    display: flex;
+  }
+  .user-details a{
+    
+    border-radius: 5px;
+    margin: 2px;
+    background-color: #ffffff;
+  }
+
+  .user-details img{
+    width: 50px;
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 1px;
+  }
+
+.main-part{
+    margin-left: 10em;
 }
